@@ -3,7 +3,8 @@ Investigate an electricity consumption dataset provided by University California
 
 #### DESCRIPTION OF THE INPUT DATA:
 
-1.date: Date in format dd/mm/yyyy\n
+1.date: Date in format dd/mm/yyyy
+
 2.time: time in format hh:mm:ss
 3.global_active_power: household global minute-averaged active power (in kilowatt)
 4.global_reactive_power: household global minute-averaged reactive power (in kilowatt)
