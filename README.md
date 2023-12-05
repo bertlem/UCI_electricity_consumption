@@ -4,9 +4,9 @@ Investigate an electricity consumption dataset provided by University California
 
 1 - Data exploration\
 2 - Prediction of the global active power (hourly averaged) using different algorithms\
-3 - 15-min chunks preparation
-4 - Timeseries clustering:
-5 - Knowledge graphs:
+3 - 15-min chunks preparation\
+4 - Timeseries clustering\
+5 - Knowledge graphs\
 
 #### DESCRIPTION OF THE INPUT DATA:
 
