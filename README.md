@@ -5,9 +5,8 @@ Investigate an electricity consumption dataset provided by University California
 1 - Data exploration\
 2 - Prediction of the global active power (hourly averaged) using different algorithms\
 3 - 15-min chunks preparation
-
-
-
+4 - Timeseries clustering:
+5 - Knowledge graphs:
 
 #### DESCRIPTION OF THE INPUT DATA:
 
@@ -57,7 +56,7 @@ Investigate an electricity consumption dataset provided by University California
      * Then we attribute each randomly selected chunk to one of the clusters. The notebooks provide the visualization of individual timeseries clusters and their individual silhouette scores.\
 &nbsp;  
 
-5. Knowledge graphs:\
+5. Knowledge graphs:
 
      Using the model developed in notebook 5, we predict the classification of the entire sample of chunks. We then investigate the potential use of knowledge graphs to help predicting the next chunk.
      * We first prepare a directed knowledge graph and investigate a few of its properties.
