@@ -6,7 +6,7 @@ Investigate an electricity consumption dataset provided by University California
 2 - Prediction of the global active power (hourly averaged) using different algorithms\
 3 - 15-min chunks preparation\
 4 - Timeseries clustering\
-5 - Knowledge graphs\
+5 - Knowledge graphs
 
 #### DESCRIPTION OF THE INPUT DATA:
 
@@ -27,13 +27,13 @@ Investigate an electricity consumption dataset provided by University California
      * From the original minute-wise data, create hourly/daily/monthly average dataframes
      * Explore trends and data distributions (not normally distributed in most cases)
      * Split train (dec 2006 - dec 2009) and test data (2010)
-     * Create lag features and keep only the relavant ones (using partial autocorrelation)
+     * Create lag features and keep only the relevant ones (using partial autocorrelation)
      * Rescale and backup data  
 &nbsp;
   
 2. Prediction of the global active power (hourly averaged):
    
-   We want to predict the global active power (hourly averaged). We assume that we do not know the other instantaneous quantities (intensty, voltage, etc) but that we know their past (=lag) values. We also assume we do not have access to the sub-meters values. We use various algorithms:
+   We want to predict the global active power (hourly averaged). We assume that we do not know the other instantaneous quantities (intensity, voltage, etc) but that we know their past (=lag) values. We also assume we do not have access to the sub-meters values. We use various algorithms:
      * scikit-learn linear regression
      * scikit-learn random forest (including assessment of feature importance)
      * lightgbm gradient boosting
@@ -42,6 +42,7 @@ Investigate an electricity consumption dataset provided by University California
 
      In each case, we provide evaluation metrics and visualization of the prediction.\
      &nbsp;
+   
      ***All algorithms have similar performances: they forecast decently the time evolution, but they fail to capture the peak values, and the peaks predicted are slightly lagged when compared with the test values. Both are due to the fact that we use only lag values as input for the predictions, while external data (for instance air temperature, holidays, etc) would be required for a better performance.***
 
 3. 15-mins chunks preparation:
